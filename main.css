@@ -17,3 +17,45 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .w-nav-menu {
+        flex-direction: column;
+    }
+
+    .footer-col {
+        text-align: left;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .w-container {
+        padding: 0 15px;
+    }
+}
+
+.w-nav-menu {
+    display: none;
+    flex-direction: column;
+}
+
+.w-nav-menu.w--open {
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    .w-nav-menu {
+      display: flex !important;
+    }
+  }
+  
