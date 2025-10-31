@@ -201,9 +201,9 @@
         }
 
         .gold {
-            background-color: #ffd700;
+            background-color: yellow;
             color: #6b5a00;
-            border: 1px solid #f0c500;
+            border: 1px solid yellow;
         }
 
         .gold h4 {
@@ -238,6 +238,10 @@
             height: auto;
             border-radius: 8px;
             border: 3px solid #ddd;
+        }
+
+        .title-sponsor {
+            text-align: center;
         }
 
         .bronze-sponsors {
@@ -290,6 +294,35 @@
         }
 
         .silver-sponsors img {
+            width: 250px;
+            height: 200px;
+            object-fit: contain;
+            align-items: center;
+        }
+
+        .gold-sponsors {
+            text-align: center;
+            color: yellow;
+            align-items: center;
+        }
+
+        .gold-sponsors h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+
+        .gold-sponsors div {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .gold-sponsors img {
             width: 250px;
             height: 200px;
             object-fit: contain;
@@ -351,7 +384,7 @@
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="w-nav">
         <div class="w-container">
             <a href="./index.html" class="w-nav-brand">
-                <img src="https://cdn.prod.website-files.com/68311bdc6c7c236c7666c75f/68311e06c5081fe7d239e2a0_CSU%20Cleveland%20State%20University.svg" loading="lazy" width="93" alt="" />
+                <img src="/images/CSUformulalogo_square_removed.png" loading="lazy" width="160" alt="" />
             </a>
             <nav role="navigation" class="w-nav-menu">
                 <div class="div-block">
@@ -365,7 +398,7 @@
             <div class="w-nav-button">
                 <div class="w-icon-nav-menu"></div>
             </div>
-            <div class="text-block">FORMULA SAE</div>
+            <!--<div class="text-block">FORMULA SAE</div>-->
         </div>
     </div>
 
@@ -379,6 +412,24 @@
             <h1>FOUNDING SPONSOR</h1>
             <p>Mike and Amy Sturdevant in honor of the Mark Sturdevant '19 Endowed Scholarship</p>
             <img src="./images/wDrZJpSnhv8zAAAAABJRU5ErkJggg.webp" alt="">
+        </section>
+
+        <hr class="sponsor-divider">
+
+        <section class="title-sponsor">
+            <h1>TITLE SPONSOR</h1>
+            <div>
+                <a href="https://www.csuohio.edu/"><img src="./images/clestatelogo.png" alt=""></a>
+            </div>
+        </section>
+
+        <hr class="sponsor-divider">
+
+        <section class="gold-sponsors" class="col sqs-col-12 span-12">
+            <h1>GOLD</h1>
+            <div>
+                <a href="https://www.tesla.com/"><img src="./images/1200px-Tesla_logo.png" alt=""></a>
+            </div>
         </section>
 
         <hr class="sponsor-divider">
@@ -402,6 +453,7 @@
                 <a href="https://polymaker.com/"><img src="/images/Polymaker_New_Logo.png" alt=""></a>
                 <a href="https://www.rewarner.com/"><img src="/images/r-e-warner.png" alt=""></a>
                 <a href="https://www.linkedin.com/company/e-technologies-inc/"><img src="/images/etechnologies.png" alt=""></a>
+                <a href="https://www.ansys.com/"><img src="/images/ANSYS_logo.png" alt=""></a>
             </div>
         </section>
 
